@@ -54,8 +54,13 @@ hr  {
     height: 2px;
 }
 
+.progressWrapper {
+    display:flex;
+}
+
 .progress {
     display: inline-block;
+    margin-top: 4px;
     height: 16px;
     background-color: #f7f5ff;
     min-width: 76%;
@@ -82,7 +87,8 @@ hr  {
 .checkbox-wrapper-31:hover .check {
     stroke-dashoffset: 0;
   }
-  
+
+
   .checkbox-wrapper-31 {
     position: relative;
     display: inline-block;
@@ -167,6 +173,7 @@ label:hover {
     color: #7d74e8;
 }
 
+
 #button {
     max-width:520px;
     margin:auto;
@@ -210,3 +217,4 @@ label:hover {
     cursor: pointer;
 
 }
+
