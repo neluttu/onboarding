@@ -42,6 +42,8 @@ h1 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
+    transition: all .3s ease;
+    color: black;
 }
 
 h1 svg {
@@ -178,6 +180,7 @@ a:hover {
 
 label {
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 label:hover {

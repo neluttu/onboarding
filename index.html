@@ -14,7 +14,7 @@
         <br><br><br><br>
         <div id="container">
             <div class="wrapper">
-                <h1>Take a quick tour
+                <h1 id="h1">Take a quick tour
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7d74e8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <polyline points="6 9 12 15 18 9" />
@@ -114,11 +114,13 @@
                         if(end > 90) {
                             document.getElementById('number').style.background = '#7d74e8';
                             document.getElementById('progressValue').style.color = '#7d74e8';
+                            document.getElementById('h1').style.color = '#7d74e8';
                         }
                         else if (end < 90) {
 
                             document.getElementById('number').style.background = 'black';
                             document.getElementById('progressValue').style.color = 'black';
+                            document.getElementById('h1').style.color = 'black';
                         }
                     }
                     </script>
