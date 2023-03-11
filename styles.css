@@ -1,0 +1,204 @@
+body, html {
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f5ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+
+    scroll-behavior: smooth;
+}
+
+*:focus {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width:520px;
+    margin:auto;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    min-height: 200px;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 15px 15px 5px #D9D5EE; 
+    box-shadow: 0px 30px 45px 5px #D9D5EE;
+}
+
+.wrapper {
+    padding: 55px;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h1 svg {
+    float: right;
+}
+
+hr  {
+    width: 100%;
+    border:1px solid #e6e4f3;
+    height: 2px;
+}
+
+.progress {
+    display: inline-block;
+    height: 16px;
+    background-color: #f7f5ff;
+    min-width: 76%;
+    border-radius: 25px;
+}
+
+.progress span {
+    border-radius: 25px;
+    display: inline-block;
+    width: 40%;
+    background-color: #161825;
+    height: 16px;
+    transition:300ms linear;
+}
+
+.number {
+    vertical-align: middle;
+    margin-top: -10px;
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.checkbox-wrapper-31:hover .check {
+    stroke-dashoffset: 0;
+  }
+  
+  .checkbox-wrapper-31 {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .checkbox-wrapper-31 .background {
+    fill: #ccc;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+  
+  .checkbox-wrapper-31 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+  
+  .checkbox-wrapper-31 .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox]:hover {
+    cursor: pointer;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox]:checked + svg .background {
+    fill: #000;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+    color: #5d627e;
+    transition: all .3s ease;
+  }
+
+a:hover {
+    text-decoration: none;
+    color: #7d74e8;
+}
+
+label {
+    cursor: pointer;
+}
+
+label:hover {
+    color: #7d74e8;
+}
+
+#button {
+    max-width:520px;
+    margin:auto;
+    overflow: hidden;
+    min-height: 200px;
+    text-align: right;
+    margin-top: 50px;
+    z-index: 400;
+}
+
+#button > button {
+    padding: 10px 12px 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+
+#button > button span {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#button > button:hover {
+    background-color: #7d74e8;
+    cursor: pointer;
+
+}

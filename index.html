@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat - iCodeThis.com</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet" media="all" type="text/css">
+    </head>
+    <body>
+        <br><br><br><br>
+        <div id="container">
+            <div class="wrapper">
+                <h1>Take a quick tour
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </h1>
+                Here are a few steps to help you hit the ground.<br>
+                <br>
+                <span class="number" id="progressValue">40%</span> <span class="progress" id="progress">
+                    <span id="number">&nbsp</span>
+                </span>
+            </div>
+            <hr>
+            <div class="wrapper">
+                <div class="checkbox-wrapper-31">
+                    <input checked="checked" type="checkbox" id="input1" onclick="updateWidth()">
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                  </div>
+                <label for="input1">Experience contextual conversations</label>
+                <br><br>
+                <div aria-checked="" class="checkbox-wrapper-31">
+                    <input checked="checked" type="checkbox" id="input2" onclick="updateWidth()">
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                  </div>
+                  <label for="input2">Brand your customer experience</label>
+                <br><br>
+                <div aria-checked="" class="checkbox-wrapper-31">
+                    <input type="checkbox" id="input3" onclick="updateWidth()">
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                </div>
+                <label for="input3">Offer support beyond your website</label>
+                <br><br>
+                <div aria-checked="" class="checkbox-wrapper-31">
+                    <input type="checkbox" id="input4" onclick="updateWidth()">
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                </div>
+                <label for="input4">Top customer support with bots</label>
+                <br><br>
+                <div aria-checked="" class="checkbox-wrapper-31">
+                    <input type="checkbox" id="input5" onclick="updateWidth()">
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                </div>
+                <label for="input5">Build your team</label>
+                <br><br><br>
+                <a href="#">Skip this</a>
+                <script>
+                    function updateWidth() {
+                        var newWidth = document.querySelectorAll('input[type="checkbox"]:checked').length * 20;
+                        document.getElementById("number").style.width = newWidth + '%';
+                        document.getElementById("progressValue").innerText = newWidth + '%';
+                    }
+                </script>
+                </div>
+        </div>
+    </div>
+    <div id="button">
+        <button>Get started <span>5</span></button>
+    </div>
+    </body>
+</html>
