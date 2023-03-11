@@ -1,6 +1,6 @@
 # onboarding
 iCodeThis.com daily challenge
 
-# screenshot
+## screenshot
 
 <img src="/screenshot.png">
