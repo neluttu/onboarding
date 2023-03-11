@@ -58,6 +58,12 @@ hr  {
     display:flex;
 }
 
+#progressValue {
+    opacity: 1;
+    transition: all .3s ease;
+    min-width: 80px;
+}
+
 .progress {
     display: inline-block;
     margin-top: 4px;
@@ -73,7 +79,7 @@ hr  {
     width: 40%;
     background-color: #161825;
     height: 16px;
-    transition:300ms linear;
+    transition:1000ms linear;
 }
 
 .number {

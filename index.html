@@ -84,13 +84,37 @@
                 <a href="#">Skip this</a>
                 <script>
                     function updateWidth() {
-                        var newWidth = document.querySelectorAll('input[type="checkbox"]:checked').length * 20; 
+                        var totalCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length;
+                        var newWidth = document.querySelectorAll('input[type="checkbox"]:checked').length * (100 / totalCheckBoxes); 
+
+                        let currentWidth =  parseFloat(document.getElementById("progressValue").innerHTML.slice(0,-1));
+
+                        console.log(typeof totalCheckBoxes);
+                        console.log(typeof newWidth);
+                        console.log(typeof currentWidth);
                         document.getElementById("number").style.width = newWidth + '%';
+
+                        animateValue("progressValue", currentWidth, newWidth, 1000);
+
                         document.getElementById("progressValue").innerText = newWidth + '%';
                         document.getElementById("services").innerText = document.querySelectorAll('input[type="checkbox"]:checked').length;
+                    } 
+
+                    function animateValue(target, start, end, duration) {
+                        let range = end - start;
+                        let current = start;
+                        let increment = end > start? 1 : -1;
+                        let stepTime = Math.abs(Math.floor(duration / range));
+                        let obj = document.getElementById(target);
+
+                        let timer = setInterval(function() {
+                            current += increment;
+                            obj.innerHTML = current + '%';
+                            if (current == end) clearInterval(timer);
+                        }, stepTime);
                     }
-                </script>
-                </div>
+                    </script>
+            </div>
         </div>
     </div>
     <div id="button">
