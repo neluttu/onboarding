@@ -60,7 +60,7 @@ hr  {
 
 #progressValue {
     opacity: 1;
-    transition: all .3s ease;
+    transition: all 1s ease;
     min-width: 80px;
 }
 
@@ -68,7 +68,7 @@ hr  {
     display: inline-block;
     margin-top: 4px;
     height: 16px;
-    background-color: #f7f5ff;
+    background-color: #e8e5f5;
     min-width: 76%;
     border-radius: 25px;
 }
@@ -79,8 +79,9 @@ hr  {
     width: 40%;
     background-color: #161825;
     height: 16px;
-    transition:1000ms linear;
+    transition:all 1200ms linear;
 }
+
 
 .number {
     vertical-align: middle;
@@ -88,6 +89,10 @@ hr  {
     display: inline-block;
     font-size: 32px;
     margin-right: 10px;
+}
+
+#number {
+    transition: all 1s linear;
 }
 
 .checkbox-wrapper-31:hover .check {
