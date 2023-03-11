@@ -81,16 +81,17 @@
                 <a href="#">Skip this</a>
                 <script>
                     function updateWidth() {
-                        var newWidth = document.querySelectorAll('input[type="checkbox"]:checked').length * 20;
+                        var newWidth = document.querySelectorAll('input[type="checkbox"]:checked').length * 20; 
                         document.getElementById("number").style.width = newWidth + '%';
                         document.getElementById("progressValue").innerText = newWidth + '%';
+                        document.getElementById("services").innerText = document.querySelectorAll('input[type="checkbox"]:checked').length;
                     }
                 </script>
                 </div>
         </div>
     </div>
     <div id="button">
-        <button>Get started <span>5</span></button>
+        <button>Get started <span id="services">2</span></button>
     </div>
     </body>
 </html>

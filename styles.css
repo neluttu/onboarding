@@ -195,10 +195,18 @@ label:hover {
     padding: 10px 15px;
     border-radius: 50%;
     margin-left: 10px;
+    font-weight: 600;
+    transition: all .3s ease;
 }
 
 #button > button:hover {
     background-color: #7d74e8;
+    cursor: pointer;
+
+}
+
+#button > button:hover span {
+    color: #7d74e8;
     cursor: pointer;
 
 }
